@@ -17,7 +17,7 @@
   --background-color: #000028;
   --main-text-color: #F1B2CE;
   --title-image: url(/images/cover-image-dark.png);
-  --button-hover-color: rgba(255, 0, 10, 0.4); 
+  --button-hover-color: rgba(255, 0, 10, 0.4);
 }
 
 .theme-dark .page {

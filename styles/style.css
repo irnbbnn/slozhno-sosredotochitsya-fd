@@ -324,7 +324,6 @@ a:focus-within {
     grid-column: 1;
     grid-row: 1 / span 2;
     align-self: start;
-    grid-column: 1;
   }
   
   .main__why-text,
