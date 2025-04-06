@@ -139,8 +139,11 @@ a:focus {
   margin-bottom: var(--h2-margin-s);
 }
 
-.content-section {
+section {
   margin: var(--section-margin-s);
+}
+
+.content-section {
   display: grid;
 }
 
@@ -285,7 +288,7 @@ a:focus {
     margin-right: 20px;
   }
 
-  .content-section {
+  section {
     margin: var(--section-margin-m);
   }
 
@@ -426,7 +429,7 @@ a:focus {
     width: 100%;
   }
 
-  .content-section {
+  section {
     margin: var(--section-margin-l);
   }
 
