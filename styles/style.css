@@ -48,14 +48,14 @@
   text-transform: uppercase;
   color: var(--accent-color);
   text-align: right;
-  margin-inline-end: 38px;
-  margin-block-start: 10px;
+  margin-right: 38px;
+  margin-top: 10px;
 }
 
 .header {
   min-height: 668px;
   height: 100vh;
-  margin-block-end: var(--header-margin-s);
+  margin-bottom: var(--header-margin-s);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min-content repeat(3, 1fr);
@@ -66,8 +66,8 @@
   grid-row: 2;
   align-self: start;
   justify-self: end;
-  margin-block-start: 40px;
-  margin-inline-end: 10px;
+  margin-top: 40px;
+  margin-right: 10px;
 }
 
 .header__theme-menu-list {
@@ -96,7 +96,7 @@
   color: var(--title-color);
   line-height: 78.5%;
   align-items: start;
-  margin-inline-start: 10px;
+  margin-left: 10px;
 }
 
 .header__description {
@@ -132,11 +132,11 @@ a:focus {
 }
 
 .main__title {
-  margin-block-end: var(--h3-margin-s);
+  margin-bottom: var(--h3-margin-s);
 }
 
 .main__how-to__sub-heading {
-  margin-block-end: var(--h2-margin-s);
+  margin-bottom: var(--h2-margin-s);
 }
 
 .content-section {
@@ -144,7 +144,8 @@ a:focus {
   display: grid;
 }
 
-.content-section div:last-of-type {
+.content-section div:last-of-type,
+.content-section article:last-of-type {
   margin: 0;
 }
 
@@ -154,7 +155,7 @@ a:focus {
 
 .main__subtitle {
   color: var(--subtitle-color);
-  margin-block-end: var(--h2-margin-s);
+  margin-bottom: var(--h2-margin-s);
 }
 
 .main__heading {
@@ -164,7 +165,7 @@ a:focus {
 .main__text {
   color: var(--main-text-color);
   font-weight: 100;
-  margin-block-end: var(--p-margin-s);
+  margin-bottom: var(--p-margin-s);
 }
 
 .main__accent-span {
@@ -189,7 +190,7 @@ a:focus {
 }
 
 .main_heading-pictures {
-  margin-block-end: var(--h3-margin-s);
+  margin-bottom: var(--h3-margin-s);
 }
 
 .main__pictures {
@@ -224,13 +225,9 @@ a:focus {
 }
 
 @media (width >= 768px) {
-  section {
-    margin: var(--section-margin-m);
-  }
-
   .header {
     min-height: 1024px;
-    margin-block-end: var(--header-margin-m);
+    margin-bottom: var(--header-margin-m);
     grid-template-columns: 4fr;
     grid-template-rows: 0.14fr repeat(3, 1fr);
   }
@@ -238,8 +235,8 @@ a:focus {
   .rec {
     grid-column: 3;
     grid-row: 1;
-    margin-inline-end: 48px;
-    margin-block-start: 20px;
+    margin-right: 48px;
+    margin-top: 20px;
   }
 
   .rec::before {
@@ -266,13 +263,13 @@ a:focus {
   .header__theme-menu {
     grid-column: 3;
     grid-row: 2;
-    margin-block-start: 145px;
-    margin-inline-end: 20px;
+    margin-top: 145px;
+    margin-right: 20px;
   }
 
   .header__title {
-    margin-inline-start: 0;
-    margin-block-end: 42px;
+    margin-left: 0;
+    margin-bottom: 42px;
     grid-column: span 3;
     grid-row: 3;
     align-self: center;
@@ -284,8 +281,8 @@ a:focus {
     max-width: 364px;
     width: 100%;
     align-self: start;
-    margin-block-start: 25px;
-    margin-inline-end: 20px;
+    margin-top: 25px;
+    margin-right: 20px;
   }
 
   .content-section {
@@ -295,7 +292,7 @@ a:focus {
   .main__subtitle {
     grid-column: 1;
     grid-row: 1 / span 2;
-    margin-block-end: var(--h2-margin-m);
+    margin-bottom: var(--h2-margin-m);
     align-self: start;
   }
 
@@ -349,7 +346,7 @@ a:focus {
   }
 
   .main_heading-pictures {
-    margin-block-end: var(--h2-margin-m);
+    margin-bottom: var(--h2-margin-m);
   }
 
   .main__pictures {
@@ -392,7 +389,7 @@ a:focus {
 
 @media (width >= 1024px) {
   .header {
-    margin-block-end: var(--header-margin-l);
+    margin-bottom: var(--header-margin-l);
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: min-content repeat(3, 1fr);
     min-height: 768px;
@@ -402,8 +399,8 @@ a:focus {
     grid-column: 2;
     grid-row: 1;
     padding: 20px 0;
-    margin-block-start: 0;
-    margin-inline-end: 0;
+    margin-top: 0;
+    margin-right: 0;
     justify-self: center;
   }
 
@@ -416,15 +413,15 @@ a:focus {
     grid-row: 3;
     margin: 0;
     align-self: self-start;
-    margin-block-start: 23px;
+    margin-top: 23px;
   }
 
   .header__description {
     grid-column: 2 / span 3;
     grid-row: 4;
     align-self: self-start;
-    margin-block-start: 28px;
-    margin-inline-end: 20px;
+    margin-top: 28px;
+    margin-right: 20px;
     max-width: 491px;
     width: 100%;
   }
