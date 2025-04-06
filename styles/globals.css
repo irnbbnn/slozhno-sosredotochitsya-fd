@@ -10,7 +10,7 @@ body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
   margin: 0 auto;
-  font-family: "IBM Plex mono", sans-serif;
+  font-family: "IBM Plex mono", monospace;
   font-size: 18px;
   font-weight: normal;
 }
@@ -56,6 +56,11 @@ a {
   cursor: pointer;
 }
 
-section p:last-of-type {
+button:focus-within,
+a:focus-within {
+  outline: none;
+}
+
+section article:last-of-type {
   margin-bottom: 0;
 }
