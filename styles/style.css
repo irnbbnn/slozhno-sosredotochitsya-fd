@@ -190,9 +190,6 @@ a:focus {
 .main__text {
   color: var(--main-text-color);
   font-weight: 100;
-}
-
-.main__text {
   margin-bottom: var(--p-margin-s);
 }
 
