@@ -17,20 +17,12 @@ main {
   margin-bottom: 40px;
 }
 
-p:last-of-type {
-  margin-bottom: 0;
-}
-
-article {
+section {
   margin-bottom: var(--section-margin-bottom-s);
 }
 
 header {
   margin-bottom: var(--header-margin-s);
-}
-
-article:last-of-type {
-  margin-bottom: 40px;
 }
 
 .rec::before {
@@ -47,9 +39,9 @@ article:last-of-type {
   grid-row: 1;
   text-transform: uppercase;
   color: var(--accent-color);
-  text-align: right;
   margin-right: 38px;
   margin-top: 10px;
+  justify-self: end;
 }
 
 .decorated-zone::before,
@@ -168,13 +160,9 @@ a:focus {
   align-self: start;
 }
 
-.content-section div:last-of-type,
-.content-section article:last-of-type {
+.content-section p:last-of-type,
+.content-section section:last-of-type {
   margin-bottom: 0;
-}
-
-.main__what-helps {
-  gap: var(--p-margin-s);
 }
 
 .main__what-helps-table {
@@ -200,6 +188,7 @@ a:focus {
 
 .main__pictures {
   margin-bottom: var(--footer-margin-s);
+  gap: 10px;
 }
 
 .main__pictures-table,
@@ -243,10 +232,6 @@ a:focus {
     margin: 0;
   }
 
-  article:last-of-type {
-    margin-bottom: 80px;
-  }
-
   .content-section {
     margin-bottom: var(--section-margin-bottom-m);
     gap: var(--gap-m);
@@ -285,7 +270,6 @@ a:focus {
 
   .header__theme-menu {
     grid-column: 3;
-    grid-row: 2;
     margin-top: 120px;
     margin-right: 20px;
   }
@@ -340,7 +324,6 @@ a:focus {
   }
 
   .main__what-helps .main__subtitle {
-    grid-column: 1;
     display: grid;
   }
 
@@ -353,7 +336,6 @@ a:focus {
   }
 
   .main__how-to .main__subtitle {
-    grid-column: 1;
     grid-row: span 6;
   }
 
@@ -426,7 +408,6 @@ a:focus {
 
   .header__title {
     grid-column: span 4;
-    grid-row: 3;
     margin: 0;
     align-self: self-start;
     margin-top: 17px;
@@ -444,12 +425,7 @@ a:focus {
     grid-template-columns: 0.97fr 2fr;
   }
 
-  .main__why .main__subtitle {
-    grid-column: 1;
-  }
-
   .main__what-helps .main__subtitle {
-    grid-column: 1;
     grid-row: 1;
   }
 
@@ -467,10 +443,6 @@ a:focus {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .main__how-to .main__subtitle {
-    grid-row: span 6;
-  }
-
   .main__how-to .main__title {
     grid-column: 2;
   }
@@ -478,15 +450,4 @@ a:focus {
   .footer {
     min-height: 768px;
   }
-}
-
-.theme-light .rec {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
