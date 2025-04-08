@@ -59,7 +59,3 @@ button:focus-within,
 a:focus-within {
   outline: none;
 }
-
-article p:last-of-type {
-  margin-bottom: 0;
-}
