@@ -170,6 +170,10 @@ a:focus {
   gap: var(--p-margin-s);
 }
 
+.main__how-to .title-decor {
+  font-weight: 100;
+}
+
 .main__subtitle {
   color: var(--subtitle-color);
   align-self: self-start;
@@ -391,6 +395,10 @@ a:focus {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: min-content repeat(3, 1fr);
     min-height: 768px;
+  }
+
+  .rec {
+    margin-right: 28px;
   }
 
   .header__theme-menu {
