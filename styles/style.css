@@ -170,8 +170,8 @@ a:focus {
   gap: var(--p-margin-s);
 }
 
-.main__how-to .title-decor {
-  font-weight: 100;
+.main__how-to h4.title-decor {
+  font-weight: 400;
 }
 
 .main__subtitle {
